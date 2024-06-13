@@ -1,0 +1,23 @@
+@import "./variables";
+
+main{
+  font-family: $font-text;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+h1{
+  font-family: $font-headings;
+}
+
+.nation{
+  color: aqua;
+  font-family: $font-headings;
+}
+
+
+
+@import "./Hero.scss";
+@import "./navbar.scss";
+@import "./Login";
+@import "./FindCauses"

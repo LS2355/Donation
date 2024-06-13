@@ -1,0 +1,19 @@
+@import './variables';
+
+.cause_card{
+  width: 100%;
+  height: 256px;
+  margin: 0 12px;
+  position: relative;
+  border-radius: $cause-card-border-radius;
+  background-color: $cause-card-background-color;
+  border: $cause-card-border-width solid $cause-card-border-color;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cause_card{
+    width: 83.333333%;
+    margin: 0 0;
+  }
+}
