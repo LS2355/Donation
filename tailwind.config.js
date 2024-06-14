@@ -14,6 +14,7 @@ export default {
     fontFamily: {
       'heading': ["public sans", 'sans-serif'],
       'body': ["DM serif Display", 'serif'],
+      'kod': ["Kodchasan", 'sans-serif']
     }
   },
   plugins: [],

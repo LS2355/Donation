@@ -1,19 +1,52 @@
 @import './variables';
 
-.cause_card{
-  width: 100%;
-  height: 256px;
-  margin: 0 12px;
-  position: relative;
-  border-radius: $cause-card-border-radius;
-  background-color: $cause-card-background-color;
-  border: $cause-card-border-width solid $cause-card-border-color;
+.cause_card_title{
+  font-family: $font-kod;
+  text-align: center;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .cause_card{
-    width: 83.333333%;
-    margin: 0 0;
-  }
+.cause_card{
+  overflow: hidden;
+  background-color: $cause-card-background-color;
+  border-radius: 16px;
+  position: relative;
 }
+
+.cause_card_pop{
+  position: absolute;
+  text-align: center;
+  background-color: $cause-card-popup-color;
+  bottom: 0;
+  color: black;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 350ms ease-out;
+  font-family: $font-kod;
+  align-items: center;
+}
+
+.cause_card:hover .cause_card_pop{
+  height: 55px;  
+  border-radius: 16px;
+  opacity: 1;
+}
+
+.search-bar{
+  width: 83.333333%;
+  height: 100%;
+  max-width: 950px;
+  background-color: $search-bar-color;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border: 2px solid black;
+}
+

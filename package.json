@@ -10,11 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "progressbar.js": "^1.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
+    "@types/progressbar.js": "^1.1.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

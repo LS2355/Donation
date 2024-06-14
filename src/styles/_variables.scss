@@ -1,7 +1,10 @@
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 $font-headings:"public sans", sans-serif; 
 $font-text:"DM serif Display", serif;
+$font-kod:"Kodchasan", sans-serif;
 //variables
 $border-radius: 9px;
 $border-radius-lg: 16px;
@@ -12,6 +15,35 @@ $hover-color: blue;
 
 //cause card color
 $cause-card-border-radius: 9px;
-$cause-card-background-color: white;
+$cause-card-background-color: rgb(203 213 225);
 $cause-card-border-color: gray;
 $cause-card-border-width: 2px;
+$cause-card-popup-color: white;
+
+//search bar
+
+$search-bar-color: grey;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // from {transform: translateX(-100%)}
+  // to {transform: translateX(0)}
+
+
+
+
+
+
