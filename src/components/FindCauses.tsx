@@ -1,18 +1,39 @@
 import tempData from '../data/tempData.js'
-// import CauseCards from './subcomponents/CauseCards.tsx'
+import CauseCards from './subcomponents/CauseCards.tsx'
 import '../styles/main.scss'
 import { useEffect, useState } from 'react';
 
 function FindCauses() {
 
-  const [currentCause, setCurrentCause] = useState<number>(1)
+  const [currentCause, setCurrentCause] = useState<number>(0)
+  const [causeData, setCauseData] = useState<object>(tempData)
 
-  function pers (val1, val2) { //it would be better to do this calc everytime that the raised amount has increased but for now this works to save computation over memory
-    return `${(val1/val2).toFixed(2)}%`
-  }
-  
+  // useEffect(()=>{
+    // getTheCardData()
+  // })
 
-console.log(tempData)
+  //  async function getTheCardData  () {
+  //   try{
+  //     const data = await tempData
+  //     setCauseData(data)
+  //   }
+  //   catch(err){
+  //     console.error("error fetching data: ", err)
+  //   }
+  //   }
+
+
+//we will go off the screen size to see how many causes information we need 
+
+
+//on page load i want to get that data and sent it straight to the CauseCards element
+
+
+
+
+
+
+console.log(causeData)
 
   return(
     <section id='FindCauses' className='w-screen max-w-[1800px] h-full min-h-screen flex flex-wrap justify-center'>
@@ -24,25 +45,8 @@ console.log(tempData)
         </div>  
       </div>
       
-      <div className='w-full h-[80vh] flex justify-center mx-6 mt-40'>
-        <div className='flex-col flex-wrap h-full'>
-          <div className='bg-black w-52 h-52'><div className='pb'><div className={`w-[${/*here i will put the complete persentage which will already be stored in the data*/}%] pbVal`}></div></div></div>
-        
-
-          {/* <CauseCards
-          causeTitle = {tempData[currentCause].name}
-          amountRaised = {tempData[currentCause].amountRaised}
-          goal = {tempData[currentCause].goal}
-          id = {tempData[currentCause].id}
-          causeImg = {tempData[currentCause].img}
-          setCurrentCause = {setCurrentCause}
-          /> */}
-        </div>
-        <div className='h-full'></div>
-        <div className='h-full'></div>
-
-        
-
+      <div className='w-full min-h-[80vh] sm:100% flex justify-center mx-6 mt-40'>
+          <CauseCards causesData={causeData}/>
       </div>
 
 

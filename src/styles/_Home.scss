@@ -15,28 +15,12 @@
 //animations
 @keyframes load{
   0% {width:0%}
-  80%{width: 15%}
+  20%{width: 15%}
   100%{widht: inherit}
 
 }
 
-
-.pb{
-  width: 100%;
-  height: 6px;
-  min-width: 100%;
-  background-color: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  overflow: hidden;
-
-  content: "";
-}
-.pbVal{
-
-  height: 100%;
-  background-color: blue;
+.ani-load{
   animation-name: load;
   animation-duration: 1s;
   animation-iteration-count: 1;

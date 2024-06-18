@@ -11,6 +11,11 @@
   background-color: $cause-card-background-color;
   border-radius: 16px;
   position: relative;
+  filter: brightness(85%);
+  transition: all 300ms;
+  &:hover{
+    filter: brightness(100%);
+  }
 }
 
 .cause_card_pop{
